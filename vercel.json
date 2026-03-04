@@ -1,3 +1,17 @@
 {
-  "regions": ["icn1"]
+  "regions": ["icn1"],
+  "rewrites": [
+    {
+      "source": "/content/:slug",
+      "destination": "https://nntuztaehnywdbttrajy.supabase.co/functions/v1/geobh-content-page?slug=uniqlo&page=:slug"
+    },
+    {
+      "source": "/content",
+      "destination": "https://nntuztaehnywdbttrajy.supabase.co/functions/v1/geobh-content-page?slug=uniqlo"
+    },
+    {
+      "source": "/",
+      "destination": "https://nntuztaehnywdbttrajy.supabase.co/functions/v1/geobh-page?slug=uniqlo"
+    }
+  ]
 }
